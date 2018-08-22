@@ -4,25 +4,27 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--     <meta name="description" content="">
     <meta name="author" content=""> -->
-    <link rel="icon" href="../../../../favicon.ico">
-<!--<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/custom.css"> -->
+<!-- <link rel="icon" href="https://getbootstrap.com/favicon.ico"> -->
+<!-- 
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+ -->
     <title>Blog Template for Bootstrap</title>
+    
+<!--  <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
 	<!-- 글꼴 -->
+	
 	<style>
-		@import url(http://fonts.googleleapis.com/earlyaccess/nanumgothic.css);
+	 /* @import url(http://fonts.googleleapis.com/earlyaccess/nanumgothic.css);
 		@import url(http://fonts.googleleapis.com/earlyaccess/hanna.css);
 		@import url(http://fonts.googleleapis.com/earlyaccess/notosanskr.css);
 		@import url(C:\Users\bit\eclipse-workspace\Webworkspace\Blog-Project\WebContent\css\bootstrap-theme.css);
-		
+		 */
 		*{
 			font-family: 'Nanum Gothic';
 			font-family: 'Hanna';
@@ -31,15 +33,19 @@
 	</style>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="blog.css" rel="stylesheet">
   </head>
 
   <body>
-
     <div class="container">
+	<header>
+		<jsp:include page="/jsp/include/topMenu.jsp" />
+	</header>
+	<br>
+<%--     
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
@@ -73,7 +79,7 @@
           <a class="p-2 text-muted" href="#">Travel</a>
         </nav>
       </div>
-
+ --%>
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">타이틀 오브 어 롱거 피쳐드 블로그 포스트</h1>
@@ -239,16 +245,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script> -->
-    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
     <script src="/Blog-Project/js/bootstrap.min.js"></script>
     <script src="/Blog-Project/js/bootstrap.js"></script>
     <script src="/Blog-Project/js/npm.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-	<script src="js/bootstrap.js"></script>
+	<script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"><\/script>
     <script>
-    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
       Holder.addTheme('thumb', {
         bg: '#55595c',
         fg: '#eceeef',
