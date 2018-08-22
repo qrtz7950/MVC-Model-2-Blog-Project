@@ -1,5 +1,0 @@
-INDEX VERSION 1.130
-D:\Blog\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2698841830.index
-\Blog-Project\src
-D:\Blog\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3585367641.index
-\Blog-Project\src
