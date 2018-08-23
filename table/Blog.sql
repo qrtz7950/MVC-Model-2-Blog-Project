@@ -2,7 +2,6 @@ drop table blog CASCADE CONSTRAINTS;
 drop table b_board CASCADE CONSTRAINTS;
 drop table board_tag CASCADE CONSTRAINTS;
 drop table board_category CASCADE CONSTRAINTS;
-drop table category_depth CASCADE CONSTRAINTS;
 drop table reply CASCADE CONSTRAINTS; 
 drop table friend CASCADE CONSTRAINTS;
 drop table friend_req CASCADE CONSTRAINTS;
