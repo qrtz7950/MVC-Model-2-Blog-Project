@@ -30,6 +30,8 @@ create table b_board (
     ,   view_cnt        number(5)       default 0
     ,   title           varchar2(2000)  not null
     ,   content         varchar2(4000)  not null
+    ,   depth           number(3)       not null
+    ,   parent          number(3)
     ,   category_name   varchar2(100)   not null
     ,   like_cnt        number(5)       default 0
     ,   reg_date        date            default sysdate
@@ -52,8 +54,8 @@ create table board_category (
         category_no         number(10)      primary key
     ,   id                  varchar2(20)    not null
     ,   category_name       varchar2(50)    not null
-    ,   step                char(1)         not null
-    ,   location            number(5)
+    ,   depth               number(3)       not null
+    ,   parent              number(3)
     ,   constraint board_category_id_fk foreign key(id)
         references blog(id) on delete cascade
 );
@@ -64,8 +66,8 @@ create table reply (
     ,   board_no    number(5)      not null
     ,   id          varchar2(20)   not null    
     ,   content     varchar2(500)  not null    
-    ,   step        char(1)        not null
-    ,   location    number(5)      
+    ,   depth       number(3)      not null
+    ,   parent      number(3)
     ,   reg_date    date           default sysdate
     ,   constraint reply_board_no_fk foreign key(board_no)
         references b_board(board_no) on delete cascade
